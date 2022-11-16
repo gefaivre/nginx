@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "2400:2400"
+    volumes:
+      - "./nginx:/myconfig"
+    restart: always
+    
